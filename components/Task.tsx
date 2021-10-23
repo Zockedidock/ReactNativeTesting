@@ -6,17 +6,21 @@ const Task = (props: any) => {
     var [idk, setIdk] = useState("World!")
     return (
         <View>
-            <Text>{text + idk}</Text>
+            <Text style={styles.text}>{text + idk}</Text>
             <Button
                 title={"Click me!"}
                 onPress={() => {
-                    setIdk("HAH")
+                    setIdk("lol")
                 }}
             />
         </View>
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 20,
+    },
+})
 
 export default Task
